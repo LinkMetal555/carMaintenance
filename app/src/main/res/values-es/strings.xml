@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Car Maintenance</string>
+    <string name="mainTitle">TABLA DE MANTENIMIENTO</string>
+    <string name="registerTitle">Registrar usuario</string>
+    <string name="loginTitle">Ingresar</string>
+    <string name="nameText">Nombre</string>
+    <string name="nameHint">Escriba su nombre</string>
+    <string name="emailText">Correo</string>
+    <string name="emailHint">Escriba su correo</string>
+    <string name="passwordText">Contraseña</string>
+    <string name="passwordHint">Escriba su contraseña</string>
+    <string name="loginAccountQuestion">Ya tiene una cuenta?</string>
+    <string name="textLogIn">Iniciar sesión</string>
+    <string name="registerAccountQuestion">No tiene una cuenta?</string>
+    <string name="textSignIn">Registrarse</string>
+    <string name="vehiclesText">Vehiculos</string>
+    <string name="datesText">Fechas</string>
+    <string name="profileText">Perfil</string>
+</resources>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.viewModels
+import android.util.Log
 import com.example.carmaintenance.R
 import com.example.carmaintenance.databinding.MainActivityBinding
 import com.example.carmaintenance.viewmodel.UserViewModel
@@ -26,8 +27,7 @@ class MainActivity: AppCompatActivity() {
 
         binding.continueButton.setOnClickListener {
             viewModel.authUser(name = binding.inputName.text.toString(), email = binding.inputEmail.text.toString(), password = binding.inputPassword.text.toString(), reg = register )
-            val intent = Intent(this, MenuActivity::class.java)
-            startActivity(intent)
+
 
         }
 
@@ -49,10 +49,25 @@ class MainActivity: AppCompatActivity() {
             register = !register
         }
 
+        viewModel.authState.observe(this){ success ->
+            if(success){
+                Log.d(Companion.TAG, "User authenticated")
+                //val vehicles = viewModel.userVehicles.value!!.map{it}.toTypedArray()
+                //Log.d(TAG, "Vehicles: $vehicles")
+                val intent = Intent(this, MenuActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
+
 
     }
 
     fun validateUserFields(){
 
+    }
+
+    companion object {
+        private const val TAG: String = "MainActivity"
     }
 }

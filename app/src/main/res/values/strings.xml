@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">CarMaintenance</string>
+    <string name="app_name">Car Maintenance</string>
+    <string name="mainTitle">MAINTENANCE TABLE</string>
+    <string name="registerTitle">Register user</string>
+    <string name="loginTitle">Login</string>
+    <string name="nameText">Name</string>
+    <string name="nameHint">Write your name</string>
+    <string name="emailText">Email</string>
+    <string name="emailHint">Write your email</string>
+    <string name="passwordText">Password</string>
+    <string name="passwordHint">Write your password</string>
+    <string name="loginAccountQuestion">Already have an account?</string>
+    <string name="textLogIn">LogIn</string>
+    <string name="registerAccountQuestion">Dont you have an account already?</string>
+    <string name="textSignIn">SignIn</string>
+    <string name="vehiclesText">Vehicles</string>
+    <string name="datesText">Dates</string>
+    <string name="profileText">Profile</string>
+
 </resources>
